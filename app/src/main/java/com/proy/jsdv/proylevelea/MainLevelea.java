@@ -1,12 +1,21 @@
 package com.proy.jsdv.proylevelea;
 
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class MainLevelea extends ActionBarActivity {
+    DrawerLayout drawerLayout;
+    Toolbar toolbar;
+    ActionBar actionBar;
+    TextView textView;
+    String title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
