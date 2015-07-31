@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/TextEmail"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="@string/email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/TextPassword"
+        android:layout_below="@+id/TextEmail"
+        android:layout_centerHorizontal="true"
+        android:text="@string/password" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/BtnRegister"
+        android:layout_below="@+id/TextPassword"
+        android:layout_alignLeft="@+id/TextPassword"
+        android:layout_alignStart="@+id/TextPassword" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/BtnLogin"
+        android:layout_below="@+id/TextPassword"
+        android:layout_alignRight="@+id/TextPassword"
+        android:layout_alignEnd="@+id/TextPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:ems="10"
+        android:id="@+id/TextName"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/lastname"
+        android:ems="10"
+        android:id="@+id/TextLastName"
+        android:layout_below="@+id/TextName"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextSchool"
+        android:layout_below="@+id/TextLastName"
+        android:layout_alignLeft="@+id/TextLastName"
+        android:layout_alignStart="@+id/TextLastName"
+        android:layout_alignRight="@+id/TextLastName"
+        android:layout_alignEnd="@+id/TextLastName"
+        android:text="@string/school" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/TextRetypePassword"
+        android:layout_below="@+id/TextSchool"
+        android:layout_centerHorizontal="true"
+        android:text="@string/retypepassword" />
+</RelativeLayout>

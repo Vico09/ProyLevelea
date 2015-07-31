@@ -1,10 +1,12 @@
-package com.proy.jsdv.proylevelea;
+package com.proy.jsdv.proylevelea.menu;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.proy.jsdv.proylevelea.R;
 
 public class Main_Perfil extends Fragment {
     public static final String ARG_SECTION_TITLE = "section_number";

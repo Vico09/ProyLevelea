@@ -1,16 +1,31 @@
 package com.proy.jsdv.proylevelea;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.PagerTabStrip;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import com.proy.jsdv.proylevelea.menu.Main_Feedback;
+import com.proy.jsdv.proylevelea.menu.Main_Log_out;
+import com.proy.jsdv.proylevelea.menu.Main_Message;
+import com.proy.jsdv.proylevelea.menu.Main_Oportunity;
+import com.proy.jsdv.proylevelea.menu.Main_Perfil;
+import com.proy.jsdv.proylevelea.menu.Main_Search;
+import com.proy.jsdv.proylevelea.menu.Main_Settings;
+import com.proy.jsdv.proylevelea.presentation.DisplayAdapter;
 
 public class MainActivity extends AppCompatActivity {
     /**
@@ -23,10 +38,36 @@ public class MainActivity extends AppCompatActivity {
      */
     private String drawerTitle;
 
+
+    /**
+     *
+     * Para el swiper view
+     */
+    ViewPager paper;
+    PagerTabStrip tab_strp;
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+        /**
+         * Llamar a los tabs
+         */
+
+        DisplayAdapter<DisplayAdapter> dpaper = new DisplayAdapter<DisplayAdapter>(getSupportFragmentManager());
+         paper = (ViewPager)findViewById(R.id.pager);
+
+         paper.setAdapter(dpaper);
+         tab_strp = (PagerTabStrip)findViewById(R.id.tab_strip);
+         tab_strp.setTextColor(Color.WHITE);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         setToolbar(); // Setear Toolbar como action bar
 

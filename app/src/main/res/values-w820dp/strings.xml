@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="lastname">Lastname</string>
+    <string name="school">School</string>
+    <string name="retypepassword">Retype Password</string>
+</resources>
