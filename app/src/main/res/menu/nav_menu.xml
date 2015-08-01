@@ -10,7 +10,7 @@
         <item
             android:id="@+id/id_nav_oportunity"
             android:icon="@drawable/ic_check_box_black_24dp"
-            android:title="@string/oportunity_item" />
+            android:title="@string/opportunity_item" />
         <item
             android:id="@+id/id_nav_message"
             android:icon="@drawable/ic_message_black_48dp"

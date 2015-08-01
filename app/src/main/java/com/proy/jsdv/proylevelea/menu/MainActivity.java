@@ -1,4 +1,4 @@
-package com.proy.jsdv.proylevelea;
+package com.proy.jsdv.proylevelea.menu;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -18,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.proy.jsdv.proylevelea.R;
 import com.proy.jsdv.proylevelea.menu.Main_Feedback;
 import com.proy.jsdv.proylevelea.menu.Main_Log_out;
 import com.proy.jsdv.proylevelea.menu.Main_Message;
@@ -219,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
                     .commit();
             drawerLayout.closeDrawers(); // Cerrar drawer
             setTitle(Item); // Setear título actual
-        }else if (Item.equals("Oportunity")) {
+        }else if (Item.equals("Opportunity")) {
             Bundle args = new Bundle();
             args.putString(Main_Oportunity.ARG_SECTION_TITLE, Item);
 

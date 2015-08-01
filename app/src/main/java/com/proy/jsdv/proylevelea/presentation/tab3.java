@@ -9,9 +9,7 @@ import android.view.ViewGroup;
 
 import com.proy.jsdv.proylevelea.R;
 
-/**
- * Created by Dinfantes on 10/07/2015.
- */
+
 public class tab3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

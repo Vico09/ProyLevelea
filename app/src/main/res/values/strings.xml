@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Janus Shop</string>
+    <string name="app_name">Level.ea</string>
 
     <string name="action_settings">Settings</string>
 
     <string name="Perfil_item">Perfil</string>
-    <string name="oportunity_item">Oportunity</string>
+    <string name="opportunity_item">Opportunity</string>
     <string name="search_item">Search</string>
     <string name="message_item">Message</string>
     <string name="setting_item">Setting</string>
@@ -15,11 +15,14 @@
 
     <string name="hello_Perfil">Hello Perfil!</string>
     <string name="hello_Settings">Hello Setting!</string>
-    <string name="hello_Oportunity">Hello Oportunity!</string>
+    <string name="hello_Opportunity">Hello Opportunity!</string>
     <string name="hello_Search">Hello Search!</string>
     <string name="hello_Message">Hello Message!</string>
     <string name="hello_log_out">Hello log out!</string>
     <string name="hello_Feedback">Hello Feedback!</string>
+
+    <string name="opportunity_name">Opportunity</string>
+    <string name="swiper_name">Swiper</string>
 
 
 <!-- TODO: Remove or change this placeholder text -->

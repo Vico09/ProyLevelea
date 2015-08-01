@@ -7,9 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import java.util.Locale;
 
-/**
- * Created by Dinfantes on 10/07/2015.
- */
+
 public class DisplayAdapter<DisplayAdapter> extends FragmentPagerAdapter {
     public DisplayAdapter(FragmentManager fm) {
         super(fm);
