@@ -90,4 +90,15 @@
         android:layout_centerHorizontal="true"
         android:text="@string/retypepassword"
         android:visibility="invisible" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/continue_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
 </RelativeLayout>
