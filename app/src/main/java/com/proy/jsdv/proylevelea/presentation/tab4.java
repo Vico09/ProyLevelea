@@ -15,8 +15,14 @@ public class tab4 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_logreg, container, false);
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 
 
         return view;
     }
+
+
 }

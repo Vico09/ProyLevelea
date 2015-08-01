@@ -1,5 +1,6 @@
 package com.proy.jsdv.proylevelea.presentation;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
@@ -7,14 +8,25 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
+import com.proy.jsdv.proylevelea.MainActivity;
 import com.proy.jsdv.proylevelea.R;
 import com.proy.jsdv.proylevelea.presentation.DisplayAdapter;
+
+import org.w3c.dom.Text;
 
 
 public class MainSwiperLevelea extends ActionBarActivity {
     ViewPager paper;
     PagerTabStrip tab_strp;
+
+    Button BtnReg;
+    Button btnLogIn;
+    TextView txtName;
+    TextView txtLastName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +39,7 @@ public class MainSwiperLevelea extends ActionBarActivity {
         paper.setAdapter(dpaper);
         tab_strp = (PagerTabStrip)findViewById(R.id.tab_strip);
         tab_strp.setTextColor(Color.WHITE);
+        btnLogIn = (Button)findViewById(R.id.BtnLogin);
     }
 
     @Override
@@ -51,4 +64,13 @@ public class MainSwiperLevelea extends ActionBarActivity {
         // return super.onOptionsItemSelected(item);
     }
 
+    private void onClick(){
+        txtName = (TextView) findViewById(R.id.TextName);
+        txtName.setVisibility(View.VISIBLE);
+
+        txtLastName = (TextView) findViewById(R.id.TextLastName);
+        txtLastName.setVisibility(View.VISIBLE);
+
+
+    }
 }

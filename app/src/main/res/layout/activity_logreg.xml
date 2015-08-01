@@ -55,7 +55,7 @@
         android:id="@+id/TextName"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
         android:id="@+id/TextLastName"
         android:layout_below="@+id/TextName"
         android:layout_centerHorizontal="true"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -77,7 +77,8 @@
         android:layout_alignStart="@+id/TextLastName"
         android:layout_alignRight="@+id/TextLastName"
         android:layout_alignEnd="@+id/TextLastName"
-        android:text="@string/school" />
+        android:text="@string/school"
+        android:visibility="invisible" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -87,5 +88,6 @@
         android:id="@+id/TextRetypePassword"
         android:layout_below="@+id/TextSchool"
         android:layout_centerHorizontal="true"
-        android:text="@string/retypepassword" />
+        android:text="@string/retypepassword"
+        android:visibility="invisible" />
 </RelativeLayout>
