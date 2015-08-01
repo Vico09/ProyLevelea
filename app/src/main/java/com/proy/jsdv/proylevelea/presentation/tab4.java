@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.proy.jsdv.proylevelea.R;
 import com.proy.jsdv.proylevelea.menu.MainActivity;
