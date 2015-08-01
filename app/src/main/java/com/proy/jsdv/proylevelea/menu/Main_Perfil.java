@@ -88,7 +88,7 @@ public class Main_Perfil extends Fragment {
     @Override
     public void onViewStateRestored(Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
-        mImageView.setImageBitmap(mImageBitmap);
+        //mImageView.setImageBitmap(mImageBitmap);
        /* mImageView.setVisibility(
                 savedInstanceState.getBoolean(IMAGEVIEW_VISIBILITY_STORAGE_KEY) ?
                         ImageView.VISIBLE : ImageView.INVISIBLE
