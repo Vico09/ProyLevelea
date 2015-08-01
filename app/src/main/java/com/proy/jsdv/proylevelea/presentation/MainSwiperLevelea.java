@@ -11,8 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.proy.jsdv.proylevelea.MainActivity;
 import com.proy.jsdv.proylevelea.R;
 import com.proy.jsdv.proylevelea.presentation.DisplayAdapter;
 

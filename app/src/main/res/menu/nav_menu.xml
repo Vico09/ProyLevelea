@@ -6,7 +6,7 @@
             android:id="@+id/id_nav_perfil"
             android:checked="true"
             android:icon="@drawable/ic_account_box_black_24dp"
-            android:title="@string/Perfil_item" />
+            android:title="@string/profile_item" />
         <item
             android:id="@+id/id_nav_oportunity"
             android:icon="@drawable/ic_check_box_black_24dp"

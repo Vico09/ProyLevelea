@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             setupDrawerContent(navigationView);
         }
 
-        drawerTitle = getResources().getString(R.string.Perfil_item);
+        drawerTitle = getResources().getString(R.string.profile_item);
         if (savedInstanceState == null) {
             selectItem2(drawerTitle);
         }

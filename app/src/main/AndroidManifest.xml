@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
     package="com.proy.jsdv.proylevelea"
     android:versionCode="1"
     android:versionName="1.0">
 
     <uses-permission android:name="android.permission.INTERNET">
     </uses-permission>
-=======
     package="com.proy.jsdv.proylevelea" >
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-feature android:name="android.hardware.camera" android:required="true" />
->>>>>>> origin/master
 
     <application
         android:name=".opportunity.app.AppController"
@@ -23,22 +20,17 @@
 
         <activity
             android:name=".presentation.MainSwiperLevelea"
-<<<<<<< HEAD
             android:label="@string/swiper_name">
 
-=======
             android:label="swiper">
->>>>>>> origin/master
+
         </activity>
 
         <activity
-<<<<<<< HEAD
             android:name=".menu.MainActivity"
             android:label="@string/app_name" >
-=======
             android:name=".MainActivity"
             android:label="@string/app_name">
->>>>>>> origin/master
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
