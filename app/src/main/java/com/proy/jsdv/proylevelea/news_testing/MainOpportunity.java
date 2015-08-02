@@ -26,13 +26,17 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
+//All principal presentation
+//All item should be loaded in levelea
+//The initial intems were loaded by levelea group
 
 public class MainOpportunity extends Activity {
     private static final String TAG = MainOpportunity.class.getSimpleName();
     private ListView listView;
     private FeedListAdapter listAdapter;
     private List<FeedItem> feedItems;
-    private String URL_FEED = "http://api.androidhive.info/feed/feed.json";
+    //private String URL_FEED = "http://api.androidhive.info/feed/feed.json";
+    private String URL_FEED = "https://levelea-oportunities.azure-mobile.net/";
 
     @SuppressLint("NewApi")
     @Override

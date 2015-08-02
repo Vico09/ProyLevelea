@@ -29,14 +29,16 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 
+//All principal presentation
+//All item should be loaded in levelea
+//The initial intems were loaded by levelea group
 
 public class MainOpportunity extends Activity {
     private static final String TAG = MainOpportunity.class.getSimpleName();
     private ListView listView;
     private FeedListAdapter listAdapter;
     private List<FeedItem> feedItems;
-    private String URL_FEED = "http://api.androidhive.info/feed/feed.json";
-
+    private String URL_FEED = "https://levelea-oportunities.azure-mobile.net/";
     @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,12 +51,6 @@ public class MainOpportunity extends Activity {
 
         listAdapter = new FeedListAdapter(this, feedItems);
         listView.setAdapter(listAdapter);
-
-        // These two lines not needed,
-        // just to get the look of facebook (changing background color & hiding the icon)
-//        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3b5998")));
-//        getActionBar().setIcon(
-//                new ColorDrawable(getResources().getColor(android.R.color.transparent)));
 
         // We first check for cached request
         Cache cache = AppController.getInstance().getRequestQueue().getCache();

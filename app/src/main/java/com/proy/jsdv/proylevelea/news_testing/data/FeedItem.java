@@ -3,20 +3,20 @@ package com.proy.jsdv.proylevelea.news_testing.data;
 
 public class FeedItem {
     private int id;
-    private String name, status, image, profilePic, timeStamp, url;
+    private String title, company, description, publicationTime, endTime, url;
 
     public FeedItem() {
     }
 
-    public FeedItem(int id, String name, String image, String status,
-                    String profilePic, String timeStamp, String url) {
+    public FeedItem(int id, String nameOpport, String companyName, String description,
+                    String publicationTime, String endTime, String url) {
         super();
         this.id = id;
-        this.name = name;
-        this.image = image;
-        this.status = status;
-        this.profilePic = profilePic;
-        this.timeStamp = timeStamp;
+        this.title = nameOpport;
+        this.company = companyName;
+        this.description = description;
+        this.publicationTime = publicationTime;
+        this.endTime = endTime;
         this.url = url;
     }
 
@@ -28,44 +28,44 @@ public class FeedItem {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getImge() {
-        return image;
+    public String getCompany() {
+        return company;
     }
 
-    public void setImge(String image) {
-        this.image = image;
+    public void setCompany(String company) {
+        this.company = company;
     }
 
-    public String getStatus() {
-        return status;
+    public String getDescription() {
+        return description;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getProfilePic() {
-        return profilePic;
+    public String getPublicationTime() {
+        return publicationTime;
     }
 
-    public void setProfilePic(String profilePic) {
-        this.profilePic = profilePic;
+    public void setPublicationTime(String publicationTime) {
+        this.publicationTime = publicationTime;
     }
 
-    public String getTimeStamp() {
-        return timeStamp;
+    public String getEndTime() {
+        return endTime;
     }
 
-    public void setTimeStamp(String timeStamp) {
-        this.timeStamp = timeStamp;
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
     }
 
     public String getUrl() {
