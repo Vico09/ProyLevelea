@@ -36,3 +36,4 @@ public class Main_Settings extends Fragment {
     }
 
 }
+

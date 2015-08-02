@@ -13,7 +13,7 @@ import android.widget.ImageView;
 
 import com.proy.jsdv.proylevelea.R;
 
-public class Main_Perfil extends Fragment {
+public class Main_Profile extends Fragment {
     public static final String ARG_SECTION_TITLE = "section_number";
     static final int REQUEST_IMAGE_CAPTURE = 1;
     private static final String BITMAP_STORAGE_KEY = "viewbitmap";
@@ -24,15 +24,15 @@ public class Main_Perfil extends Fragment {
     public static ImageView mImageView;
     Button photoButton;
 
-    public static Main_Perfil newInstance(String sectionTitle) {
-        Main_Perfil fragment = new Main_Perfil();
+    public static Main_Profile newInstance(String sectionTitle) {
+        Main_Profile fragment = new Main_Profile();
         Bundle args = new Bundle();
         args.putString(ARG_SECTION_TITLE, sectionTitle);
         fragment.setArguments(args);
         return fragment;
     }
 
-    public Main_Perfil() {
+    public Main_Profile() {
     }
 
     @Override
@@ -44,7 +44,7 @@ public class Main_Perfil extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_main__perfil, container, false);
+        View view = inflater.inflate(R.layout.activity_main__profile, container, false);
         return view;
     }
 
@@ -95,3 +95,4 @@ public class Main_Perfil extends Fragment {
         );*/
     }
 }
+

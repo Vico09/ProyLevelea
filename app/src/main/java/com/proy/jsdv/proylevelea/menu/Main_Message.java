@@ -34,3 +34,4 @@ public class Main_Message extends Fragment {
         super.onCreate(savedInstanceState);
     }
 }
+

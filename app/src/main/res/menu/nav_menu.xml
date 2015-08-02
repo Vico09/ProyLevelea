@@ -22,7 +22,7 @@
         <!-- Sección de configuración -->
         <item
             android:id="@+id/configuration_section"
-            android:title="@string/configuracion_item">
+            android:title="@string/config_item">
             <menu>
                 <item
                     android:id="@+id/id_nav_settings"

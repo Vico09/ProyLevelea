@@ -3,7 +3,6 @@ package com.proy.jsdv.proylevelea.menu;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -16,16 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.proy.jsdv.proylevelea.R;
-import com.proy.jsdv.proylevelea.menu.Main_Feedback;
-import com.proy.jsdv.proylevelea.menu.Main_Log_out;
-import com.proy.jsdv.proylevelea.menu.Main_Message;
-import com.proy.jsdv.proylevelea.menu.Main_Oportunity;
-import com.proy.jsdv.proylevelea.menu.Main_Perfil;
-import com.proy.jsdv.proylevelea.menu.Main_Search;
-import com.proy.jsdv.proylevelea.menu.Main_Settings;
 import com.proy.jsdv.proylevelea.presentation.DisplayAdapter;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
          */
 
         DisplayAdapter<DisplayAdapter> dpaper = new DisplayAdapter<DisplayAdapter>(getSupportFragmentManager());
-         paper = (ViewPager)findViewById(R.id.pager);
+        paper = (ViewPager)findViewById(R.id.pager);
 
-         paper.setAdapter(dpaper);
-         tab_strp = (PagerTabStrip)findViewById(R.id.tab_strip);
-         tab_strp.setTextColor(Color.WHITE);
+        paper.setAdapter(dpaper);
+        tab_strp = (PagerTabStrip)findViewById(R.id.tab_strip);
+        tab_strp.setTextColor(Color.WHITE);
     }
 
     @Override
@@ -154,11 +145,11 @@ public class MainActivity extends AppCompatActivity {
     }*/
 
     private void selectItem2(String Item) {
-        if (Item.equals("Perfil")) {
+        if (Item.equals("Profile")) {
             Bundle args = new Bundle();
-            args.putString(Main_Perfil.ARG_SECTION_TITLE, Item);
+            args.putString(Main_Profile.ARG_SECTION_TITLE, Item);
 
-            Fragment fragment = Main_Perfil.newInstance(Item);
+            Fragment fragment = Main_Profile.newInstance(Item);
             fragment.setArguments(args);
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager
@@ -222,9 +213,9 @@ public class MainActivity extends AppCompatActivity {
             setTitle(Item); // Setear título actual
         }else if (Item.equals("Opportunity")) {
             Bundle args = new Bundle();
-            args.putString(Main_Oportunity.ARG_SECTION_TITLE, Item);
+            args.putString(Main_Opportunity.ARG_SECTION_TITLE, Item);
 
-            Fragment fragment = Main_Oportunity.newInstance(Item);
+            Fragment fragment = Main_Opportunity.newInstance(Item);
             fragment.setArguments(args);
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager

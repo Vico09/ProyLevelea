@@ -8,18 +8,18 @@ import android.view.ViewGroup;
 
 import com.proy.jsdv.proylevelea.R;
 
-public class Main_Oportunity extends Fragment {
+public class Main_Opportunity extends Fragment {
     public static final String ARG_SECTION_TITLE = "section_number";
 
-    public static Main_Oportunity newInstance(String sectionTitle) {
-        Main_Oportunity fragment = new Main_Oportunity();
+    public static Main_Opportunity newInstance(String sectionTitle) {
+        Main_Opportunity fragment = new Main_Opportunity();
         Bundle args = new Bundle();
         args.putString(ARG_SECTION_TITLE, sectionTitle);
         fragment.setArguments(args);
         return fragment;
     }
 
-    public Main_Oportunity() {
+    public Main_Opportunity() {
     }
 
     @Override
