@@ -1,6 +1,5 @@
 package com.proy.jsdv.proylevelea.menu;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -18,7 +17,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.proy.jsdv.proylevelea.R;
-import com.proy.jsdv.proylevelea.opportunity.MainOpportunity;
 import com.proy.jsdv.proylevelea.presentation.DisplayAdapter;
 
 public class MainActivity extends AppCompatActivity {
@@ -60,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         setToolbar(); // Setear Toolbar como action bar
 
@@ -103,14 +103,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-
     }
 
-    @Override
-    public void onBackPressed() {
-        startActivity(new Intent(MainActivity.this,Main_Profile.class));
-        super.onBackPressed();
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -165,7 +159,16 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawers(); // Cerrar drawer
             setTitle(Item); // Setear título actual
         } else if (Item.equals("Setting")) {
-            startActivity(new Intent(MainActivity.this, MainOpportunity.class));
+            Bundle args = new Bundle();
+            args.putString(Main_Settings.ARG_SECTION_TITLE, Item);
+
+            Fragment fragment = Main_Settings.newInstance(Item);
+            fragment.setArguments(args);
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_content, fragment)
+                    .commit();
             drawerLayout.closeDrawers(); // Cerrar drawer
             setTitle(Item); // Setear título actual
         }else if (Item.equals("Feedback")) {
