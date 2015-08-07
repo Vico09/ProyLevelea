@@ -239,4 +239,10 @@ public class MainActivity extends AppCompatActivity {
             setTitle(Item); // Setear título actual
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        super.onBackPressed();
+    }
 }
