@@ -30,7 +30,7 @@ import java.util.List;
 public class Main_Opportunity extends Fragment {
     public static final String ARG_SECTION_TITLE = "section_number";
     //private String URL_FEED = "https://levelea-oportunities.azure-mobile.net/";
-    private String URL_FEED = "http://api.androidhive.info/feed/feed.json";
+    private String URL_FEED = "https://api.myjson.com/bins/59hvc";
     private static final String TAG = Main_Opportunity.class.getSimpleName();
     private ListView listView;
     private FeedListAdapter listAdapter;
