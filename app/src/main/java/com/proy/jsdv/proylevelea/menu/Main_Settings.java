@@ -5,11 +5,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
+import android.widget.Switch;
+import android.widget.Toast;
 
 import com.proy.jsdv.proylevelea.R;
 
 
 public class Main_Settings extends Fragment {
+    private Switch OppState;
     public static final String ARG_SECTION_TITLE = "section_number";
 
     public static Main_Settings newInstance(String sectionTitle) {
@@ -35,5 +39,25 @@ public class Main_Settings extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        OppState = (Switch) view.findViewById(R.id.oppSta);
+
+        OppState.setChecked(true);
+
+        OppState.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+                    Toast.makeText(getActivity().getApplicationContext(),"Active",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(getActivity().getApplicationContext(),"Inactive",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
 }
 

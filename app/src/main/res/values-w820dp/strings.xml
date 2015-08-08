@@ -8,4 +8,5 @@
     <string name="lastname">Lastname</string>
     <string name="school">School</string>
     <string name="retypepassword">Retype Password</string>
+    <string name="email_profile">Email account</string>
 </resources>
