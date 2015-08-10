@@ -66,7 +66,7 @@ public class SignInOptionsFragment extends Fragment {
                             R.animator.slide_down)
                     .add(R.id.register_fragment, RegistrationFragment
                                     .instantiate(getActivity(), RegistrationFragment.class.getName()),
-                            LOG_IN_FRAGMENT_TAG
+                            REGISTER_FRAGMENT_TAG
                     ).addToBackStack(null).commit();
         }
     }

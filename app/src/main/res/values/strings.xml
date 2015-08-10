@@ -36,19 +36,22 @@
     <string name="title_activity_main__search">Main_Search</string>
     <string name="title_activity_main__log_out">Main_Log_out</string>
     <string name="title_activity_main__feedback">Main_Feedback</string>
-    <string name="email">email</string>
-    <string name="password">password</string>
+    <string name="email_profile">Email account</string>
+
+    //Log in and registration Button strings
+    <string name="password">Password</string>
     <string name="register">Register</string>
     <string name="log_in">Login</string>
-    <string name="last_name">Last Name</string>
-    <string name="school">School</string>
-    <string name="retype_password">Retype Password</string>
-    <string name="first_name">First Name</string>
-    <string name="email_profile">Email account</string>
     <string name="cancel">Cancel</string>
+
+    //Registration strings
+    <string name="id">ID</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="school">School</string>
     <string name="phone_number">Phone Number</string>
     <string name="country">Country</string>
     <string name="birth_day">Birthday</string>
-    <string name="id">ID</string>
-
 </resources>

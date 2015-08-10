@@ -36,16 +36,16 @@ public class LogInFragment extends Fragment {
             }
 
         });
-        cancelBtn = (Button) view.findViewById(R.id.bn_cancel2);
+        cancelBtn = (Button) view.findViewById(R.id.bn_cancel1);
         cancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toggleFragment();
+                toggleCancelLogInFragment();
             }
         });
     }
 
-    private void toggleFragment() {
+    private void toggleCancelLogInFragment() {
         Fragment f = getFragmentManager().findFragmentByTag(LOG_IN_FRAGMENT_TAG);
         if (f != null) {
             getFragmentManager().popBackStack();
