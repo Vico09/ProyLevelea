@@ -54,4 +54,13 @@
     <string name="phone_number">Phone Number</string>
     <string name="country">Country</string>
     <string name="birth_day">Birthday</string>
+
+        <string name="Text">Una aplicación orientada a los estudiantes que necesitan un puesto laboral;
+El propósito de nuestra aplicación es, poder dar la opción, de que obtengas la experiencia que las
+        empresas requieren al ocupar un puesto.
+Por esta razón, esta aplicación le dará oportunidad de ganar esa experiencia, por medio de  pasantía,
+        vacaciones, servicios profesionales y demás opciones que las empresas necesiten.
+En nuestra app se afiliaran diferentes empresas las cuales notificaran una serie de puestos,
+        en los cuales usted puede forjar su currículo, Reputación y adquirir experiencia, y porque no,
+        asta un posible puesto laboral.</string>
 </resources>
