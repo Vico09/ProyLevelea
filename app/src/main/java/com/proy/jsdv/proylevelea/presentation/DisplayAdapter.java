@@ -27,9 +27,6 @@ public class DisplayAdapter<DisplayAdapter> extends FragmentPagerAdapter {
             case 2:
                 tab3 t3 = new tab3();
                 return t3;
-            case 3:
-                tab4 t4 = new tab4();
-                return t4;
 
         }
         return null;
@@ -37,7 +34,7 @@ public class DisplayAdapter<DisplayAdapter> extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }//set the number of tabs
 
     @Override
@@ -52,9 +49,7 @@ public class DisplayAdapter<DisplayAdapter> extends FragmentPagerAdapter {
             case 2:
 
                 return "Experience";
-            case 3:
 
-                return "Register";
         }
         return null;
     }

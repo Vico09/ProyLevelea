@@ -39,7 +39,7 @@ public class MainSwiperLevelea extends ActionBarActivity {
         paper.setAdapter(dpaper);
         tab_strp = (PagerTabStrip)findViewById(R.id.tab_strip);
         tab_strp.setTextColor(Color.WHITE);
-        btnLogIn = (Button)findViewById(R.id.BtnLogin);
+        //btnLogIn = (Button)findViewById(R.id.BtnLogin);
     }
 
     @Override
@@ -64,13 +64,5 @@ public class MainSwiperLevelea extends ActionBarActivity {
         // return super.onOptionsItemSelected(item);
     }
 
-    private void onClick(){
-        txtName = (TextView) findViewById(R.id.TextName);
-        txtName.setVisibility(View.VISIBLE);
 
-        txtLastName = (TextView) findViewById(R.id.TextLastName);
-        txtLastName.setVisibility(View.VISIBLE);
-
-
-    }
 }
