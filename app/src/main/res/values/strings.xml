@@ -63,4 +63,7 @@ Por esta razón, esta aplicación le dará oportunidad de ganar esa experiencia,
 En nuestra app se afiliaran diferentes empresas las cuales notificaran una serie de puestos,
         en los cuales usted puede forjar su currículo, Reputación y adquirir experiencia, y porque no,
         asta un posible puesto laboral.</string>
+    <string name="title_activity_about_activty">AboutActivty</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
