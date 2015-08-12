@@ -73,6 +73,10 @@
             android:name=".AboutActivty"
             android:label="@string/title_activity_about_activty" >
         </activity>
+        <activity
+            android:name=".opportunity.ApplyActivity"
+            android:label="@string/title_activity_apply" >
+        </activity>
     </application>
 
 </manifest>

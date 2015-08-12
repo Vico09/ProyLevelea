@@ -1,11 +1,13 @@
 package com.proy.jsdv.proylevelea.menu;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.android.volley.Cache;
@@ -15,6 +17,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.proy.jsdv.proylevelea.R;
+import com.proy.jsdv.proylevelea.opportunity.ApplyActivity;
 import com.proy.jsdv.proylevelea.opportunity.adapter.FeedListAdapter;
 import com.proy.jsdv.proylevelea.opportunity.app.AppController;
 import com.proy.jsdv.proylevelea.opportunity.data.FeedItem;
@@ -70,6 +73,13 @@ public class Main_Opportunity extends Fragment {
 
         listAdapter = new FeedListAdapter(getActivity(), feedItems);
         listView.setAdapter(listAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getActivity(), ApplyActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // These two lines not needed,
         // just to get the look of facebook (changing background color & hiding the icon)
