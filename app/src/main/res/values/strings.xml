@@ -43,6 +43,7 @@
     <string name="register">Register</string>
     <string name="log_in">Login</string>
     <string name="cancel">Cancel</string>
+    <string name="apply">Apply to Job</string>
 
     //Registration strings
     <string name="id">ID</string>
@@ -66,4 +67,5 @@ En nuestra app se afiliaran diferentes empresas las cuales notificaran una serie
     <string name="title_activity_about_activty">AboutActivty</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_apply">ApplyActivity</string>
 </resources>
