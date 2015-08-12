@@ -57,7 +57,8 @@ public class RegistrationFragment extends Fragment {
                     .add(R.id.register_fragment, RegistrationFragment
                                     .instantiate(getActivity(), RegistrationFragment.class.getName()),
                             REGISTER_FRAGMENT_TAG
-                    ).addToBackStack(null).commit();
+                    )
+                    .addToBackStack(null).commit();
         }
     }
 }

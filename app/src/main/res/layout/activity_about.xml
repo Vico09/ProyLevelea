@@ -9,11 +9,11 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/Text"
+        android:textAlignment="inherit"
         android:textSize="20sp"
-        android:gravity="center"
+        android:gravity="center_vertical|center"
         android:id="@+id/textView2"
         android:background="@drawable/background_about"
-        android:layout_gravity="center"
         android:textColor="@android:color/white" />
 
 </LinearLayout>
