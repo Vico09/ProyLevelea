@@ -30,17 +30,7 @@
 
         </android.support.v4.view.PagerTabStrip>
 
-
-    </android.support.v4.view.ViewPager>
-    <fragment
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/log_in_fragment"
-        android:name="com.proy.jsdv.proylevelea.registration.SignInOptionsFragment"
-        tools:layout="@layout/fragment_sign_in_options"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"/>
+   </android.support.v4.view.ViewPager>
 
     <FrameLayout
         android:id="@+id/log_in_frag"
@@ -53,9 +43,18 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/log_in_fragment"
+            android:name="com.gsvd.levelea.levelea.registration.SignInOptionsFragment"
+            tools:layout="@layout/fragment_sign_in_option"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal|bottom" />
     </FrameLayout>
 
-
-
-
 </RelativeLayout>
+
+

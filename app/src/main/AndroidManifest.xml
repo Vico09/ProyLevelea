@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.proy.jsdv.proylevelea"
+    package="com.gsvd.levelea.levelea"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -13,70 +13,40 @@
         android:name="android.hardware.camera"
         android:required="true" />
 
+
     <application
         android:name=".opportunity.app.AppController"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_lvleaicon"
+        android:icon="@drawable/ic_leveleaicon"
         android:label="@string/app_name"
-        android:theme="@style/Theme.lvleatheme" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".presentation.MainSwiperLevelea"
-            android:icon="@mipmap/ic_lvleaicon"
+            android:icon="@drawable/ic_leveleaicon"
             android:label="@string/app_name"
-            android:noHistory="true" >
+            android:noHistory="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+
+
+        <activity
+            android:name=".opportunity.MainOpportunity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".opportunity.MainOpportunity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".menu.MainActivity"
-            android:label="@string/app_name" >
-        </activity>
 
-        <fragment
-            android:name=".Main_Profile"
-            android:label="@string/title_activity_main__profile" >
-        </fragment>
-        <fragment
-            android:name=".Main_Settings"
-            android:label="@string/title_activity_main__settings" >
-        </fragment>
-
-        <Activity
-            android:name=".Main_Opportunity"
-            android:label="@string/title_activity_main__opportunity" >
-        </Activity>
-        <Activity
-            android:name=".menu.Main_Message"
-            android:label="@string/title_activity_main__message" >
-        </Activity>
-        <Activity
-            android:name=".menu.Main_Search"
-            android:label="@string/title_activity_main__search" >
-        </Activity>
-        <Activity
-            android:name=".menu.Main_Log_out"
-            android:label="@string/title_activity_main__log_out" >
-        </Activity>
-        <Activity
-            android:name=".menu.Main_Feedback"
-            android:label="@string/title_activity_main__feedback" >
-        </Activity>
-
-        <activity
-            android:name=".AboutActivty"
-            android:label="@string/title_activity_about_activty" >
-        </activity>
-        <activity
-            android:name=".opportunity.ApplyActivity"
-            android:label="@string/title_activity_apply" >
-        </activity>
     </application>
+
+
+
 
 </manifest>

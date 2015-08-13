@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/feed_bg"
+    android:background="@color/md_blue_grey_100"
     android:orientation="vertical"
     android:descendantFocusability="blocksDescendants">
 
@@ -49,7 +49,7 @@
                     android:id="@+id/timestamp"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/timestamp"
+                    android:textColor="@color/md_blue_grey_200"
                     android:textSize="@dimen/feed_item_timestamp" />
             </LinearLayout>
         </LinearLayout>
@@ -71,7 +71,7 @@
             android:paddingBottom="10dp"
             android:paddingLeft="@dimen/feed_item_status_pad_left_right"
             android:paddingRight="@dimen/feed_item_status_pad_left_right"
-            android:textColorLink="@color/link"
+            android:textColorLink="@color/md_blue_A700"
             android:focusable="false"
             android:clickable="false"/>
 
